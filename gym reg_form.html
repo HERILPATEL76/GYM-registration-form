@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerHouse 24/7 Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="gym_style.css">
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="https://eoidprjf4s6.exactdn.com/wp-content/uploads/2024/10/powerhouse_fitness_logo.png?strip=all&lossy=1&ssl=1" alt="PowerHouse 24/7 Logo">
+            <h1>PowerHouse 24/7</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-area">
+        <div class="form-container">
+            <h2>Gym Registration</h2>
+            <form action="#" method="post">
+
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="gender_other" name="gender" value="other">
+                        <label for="gender_other">Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" min="50" max="300">
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" min="10" max="500">
+                </div>
+
+                <h3>Address</h3>
+                <div class="form-group">
+                    <label for="street_address">Street Address:</label>
+                    <input type="text" id="street_address" name="street_address">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State/Province:</label>
+                    <input type="text" id="state" name="state">
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">Zip/Postal Code:</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+
+
+                <h3>Membership Details</h3>
+                 <div class="form-group">
+                    <label for="membership_type">Membership Type:</label>
+                    <select id="membership_type" name="membership_type" required>
+                        <option value="">Select Membership Type</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="workout_time">Preferred Workout Time:</label>
+                    <select id="workout_time" name="workout_time">
+                        <option value="">Select Time</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Do you require a personal trainer?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="trainer_yes" name="require_trainer" value="yes" required>
+                        <label for="trainer_yes">Yes</label>
+
+                        <input type="radio" id="trainer_no" name="require_trainer" value="no">
+                        <label for="trainer_no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Have you been in a Gym before?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="gym_before_yes" name="been_in_gym_before" value="yes" required>
+                        <label for="gym_before_yes">Yes</label>
+
+                        <input type="radio" id="gym_before_no" name="been_in_gym_before" value="no">
+                        <label for="gym_before_no">No</label>
+                    </div>
+                </div>
+
+
+                <h3>Fitness Goals</h3>
+                <div class="form-group">
+                    <label>Fitness Goal(s):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="goal_weight_loss" name="fitness_goals[]" value="weight_loss">
+                        <label for="goal_weight_loss">Weight Loss</label>
+
+                        <input type="checkbox" id="goal_muscle_gain" name="fitness_goals[]" value="muscle_gain">
+                        <label for="goal_muscle_gain">Muscle Gain</label>
+
+                        <input type="checkbox" id="goal_endurance" name="fitness_goals[]" value="endurance">
+                        <label for="goal_endurance">Improved Endurance</label>
+
+                        <input type="checkbox" id="goal_general" name="fitness_goals[]" value="general_fitness">
+                        <label for="goal_general">General Fitness</label>
+
+                        <input type="checkbox" id="goal_other" name="fitness_goals[]" value="other">
+                        <label for="goal_other">Other</label>
+                        <input type="text" id="other_goal_text" name="other_fitness_goal" placeholder="Specify your goal">
+                    </div>
+                </div>
+
+                <div class="form-group terms-checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+                </div>
+
+
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 PowerHouse 24/7. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+    </footer>
+
+</body>
+</html>
